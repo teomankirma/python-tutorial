@@ -111,45 +111,71 @@
 
 # Strings
 
-a = """Lorem ipsum dolor sit amet,
-consectetur adipiscing elit,
-sed do eiusmod tempor incididunt
-ut labore et dolore magna aliqua."""
-print(a)
-print(a[1])
+# a = """Lorem ipsum dolor sit amet,
+# consectetur adipiscing elit,
+# sed do eiusmod tempor incididunt
+# ut labore et dolore magna aliqua."""
+# print(a)
+# print(a[1])
 
-for x in "banana":
-  print(x)
+# for x in "banana":
+#   print(x)
 
-print(len(a))
+# print(len(a))
 
-txt = "The best things in life are free!"
-if "free" in txt:
-  print("Yes, 'free' is present.")
+# txt = "The best things in life are free!"
+# if "free" in txt:
+#   print("Yes, 'free' is present.")
 
-b = "Hello World!"
-print(b[2:5])
-print(b[:5])
-print(b[2:])
-print(b[-5: -2])
+# b = "Hello World!"
+# print(b[2:5])
+# print(b[:5])
+# print(b[2:])
+# print(b[-5: -2])
 
-print(b.upper())
-print(b.lower())
+# print(b.upper())
+# print(b.lower())
 
-a = " Hello, World! "
-print(a.strip())
-print(a.replace("H", "J"))
-print(a.split(","))
+# a = " Hello, World! "
+# print(a.strip())
+# print(a.replace("H", "J"))
+# print(a.split(","))
 
-age = 36
-txt = "My name is John, and I am {}"
-print(txt.format(age))
+# age = 36
+# txt = "My name is John, and I am {}"
+# print(txt.format(age))
 
-quantity = 3
-itemno = 567
-price = 49.95
-myorder = "I want to pay {2} dollars for {0} pieces of item {1}."
-print(myorder.format(quantity, itemno, price))
+# quantity = 3
+# itemno = 567
+# price = 49.95
+# myorder = "I want to pay {2} dollars for {0} pieces of item {1}."
+# print(myorder.format(quantity, itemno, price))
 
-txt = "We are the so-called \"Vikings\" from the north."
-print(txt)
+# txt = "We are the so-called \"Vikings\" from the north."
+# print(txt)
+
+# Booleans
+
+print(10 > 9)
+print(10 == 9)
+print(10 < 9)
+
+a = 200
+b = 33
+
+if b > a:
+  print("b is greater than a")
+else:
+  print("b is not greater than a")
+
+
+print(bool("Hello"))
+print(bool(15))
+
+def myFunction() :
+  return True
+
+if myFunction():
+  print("YES!")
+else:
+  print("NO!")
