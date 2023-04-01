@@ -52,11 +52,33 @@
 
 # Output Variables
 
-x = "Python "
-y = "is "
-z = "awesome!"
-print(x + y + z)
+# x = "Python "
+# y = "is "
+# z = "awesome!"
+# print(x + y + z)
 
-x = 5
-y = "teo"
-print(x, y)
+# x = 5
+# y = "teo"
+# print(x, y)
+
+# Global Variables
+
+x = "awesome"
+
+def myfunc() : 
+    x = "fantastic"
+    print("Python is " + x)
+
+myfunc()
+
+print("Python is " + x)
+
+y = "awesome"
+
+def myOtherFunc() :
+    global y
+    y = "fantastic"
+
+myOtherFunc()
+
+print("Python is " + y)
