@@ -63,22 +63,48 @@
 
 # Global Variables
 
-x = "awesome"
+# x = "awesome"
 
-def myfunc() : 
-    x = "fantastic"
-    print("Python is " + x)
+# def myfunc() : 
+#     x = "fantastic"
+#     print("Python is " + x)
 
-myfunc()
+# myfunc()
 
-print("Python is " + x)
+# print("Python is " + x)
 
-y = "awesome"
+# y = "awesome"
 
-def myOtherFunc() :
-    global y
-    y = "fantastic"
+# def myOtherFunc() :
+#     global y
+#     y = "fantastic"
 
-myOtherFunc()
+# myOtherFunc()
 
-print("Python is " + y)
+# print("Python is " + y)
+
+# Numbers
+
+x = 1
+y = 2.8  
+z = 1j
+
+print(type(x))
+print(type(y))
+print(type(z))
+
+a = float(x)
+b = int(y)
+c = complex(x)
+
+print(a)
+print(b)
+print(c)
+
+print(type(a))
+print(type(b))
+print(type(c))
+
+import random
+
+print(random.randrange(1, 10))
