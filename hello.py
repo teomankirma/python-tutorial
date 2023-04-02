@@ -337,43 +337,81 @@
 
 # Sets
 
-thisset = {"apple", "banana", "cherry"}
-print(thisset)
+# thisset = {"apple", "banana", "cherry"}
+# print(thisset)
 
-thisset = {"apple", "banana", "cherry", "apple"}
-print(thisset)
+# thisset = {"apple", "banana", "cherry", "apple"}
+# print(thisset)
 
-thisset = set(("apple", "banana", "cherry")) # note the double round-brackets
-print(thisset)
+# thisset = set(("apple", "banana", "cherry")) # note the double round-brackets
+# print(thisset)
 
-thisset.add("orange")
-print(thisset)
+# thisset.add("orange")
+# print(thisset)
 
-tropical = {"pineapple", "mango", "papaya"}
-thisset.update(tropical)
-print(thisset)
+# tropical = {"pineapple", "mango", "papaya"}
+# thisset.update(tropical)
+# print(thisset)
 
-thisset.discard("banana")
-print(thisset)
+# thisset.discard("banana")
+# print(thisset)
 
-set1 = {"a", "b" , "c"}
-set2 = {1, 2, 3}
+# set1 = {"a", "b" , "c"}
+# set2 = {1, 2, 3}
 
-set3 = set1.union(set2)
-print(set3)
+# set3 = set1.union(set2)
+# print(set3)
 
-x = {"apple", "banana", "cherry"}
-y = {"google", "microsoft", "apple"}
+# x = {"apple", "banana", "cherry"}
+# y = {"google", "microsoft", "apple"}
 
-x.intersection_update(y)
+# x.intersection_update(y)
 
-print(x)
+# print(x)
 
-z = x.intersection(y)
-print(z)
+# z = x.intersection(y)
+# print(z)
 
-x = {"apple", "banana", "cherry"}
-y = {"google", "microsoft", "apple"}
+# x = {"apple", "banana", "cherry"}
+# y = {"google", "microsoft", "apple"}
 
-x.symmetric_difference_update(y)
-print(x)
+# x.symmetric_difference_update(y)
+# print(x)
+
+# Dictionaries
+
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964,
+  "year": 2020
+}
+print(thisdict)
+print(thisdict["brand"])
+
+thisdict = dict(name = "John", age = 36, country = "Norway")
+print(thisdict)
+thisdict.update({"country": "turkiye"})
+thisdict.update({"color": "red"})
+print(thisdict)
+
+child1 = {
+  "name" : "Emil",
+  "year" : 2004
+}
+child2 = {
+  "name" : "Tobias",
+  "year" : 2007
+}
+child3 = {
+  "name" : "Linus",
+  "year" : 2011
+}
+
+myfamily = {
+  "child1" : child1,
+  "child2" : child2,
+  "child3" : child3
+}
+
+print(myfamily["child2"]["name"])
