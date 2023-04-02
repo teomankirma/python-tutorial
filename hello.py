@@ -242,16 +242,50 @@
 
 # Loop Lists
 
+# thislist = ["apple", "banana", "cherry"]
+# for x in thislist:
+#   print(x)
+
+# for i in range(len(thislist)):
+#   print(thislist[i])
+
+# i = 0
+# while i < len(thislist):
+#   print(thislist[i])
+#   i = i + 1
+
+# [print(x) for x in thislist]
+
+# List Cont.
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+
+newlist = [x for x in fruits if "a" in x]
+
+print(newlist)
+
+newlist = ['hello' for x in fruits]
+print(newlist)
+
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort()
+print(thislist)
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort()
+print(thislist)
+
+thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+thislist.sort(reverse = True)
+print(thislist)
+
+def myfunc(n):
+  return abs(n - 50)
+
+thislist = [100, 50, 65, 82, 23]
+thislist.sort(key = myfunc)
+print(thislist)
+
 thislist = ["apple", "banana", "cherry"]
-for x in thislist:
-  print(x)
-
-for i in range(len(thislist)):
-  print(thislist[i])
-
-i = 0
-while i < len(thislist):
-  print(thislist[i])
-  i = i + 1
-
-[print(x) for x in thislist]
+mylist = thislist.copy()
+print(mylist)
