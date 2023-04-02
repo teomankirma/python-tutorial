@@ -156,26 +156,86 @@
 
 # Booleans
 
-print(10 > 9)
-print(10 == 9)
-print(10 < 9)
+# print(10 > 9)
+# print(10 == 9)
+# print(10 < 9)
 
-a = 200
-b = 33
+# a = 200
+# b = 33
 
-if b > a:
-  print("b is greater than a")
-else:
-  print("b is not greater than a")
+# if b > a:
+#   print("b is greater than a")
+# else:
+#   print("b is not greater than a")
 
 
-print(bool("Hello"))
-print(bool(15))
+# print(bool("Hello"))
+# print(bool(15))
 
-def myFunction() :
-  return True
+# def myFunction() :
+#   return True
 
-if myFunction():
-  print("YES!")
-else:
-  print("NO!")
+# if myFunction():
+#   print("YES!")
+# else:
+#   print("NO!")
+
+# Lists
+
+thisList = ["apple", "banana", "orange"]
+print(thisList)
+print(len(thisList))
+print(type(thisList))
+
+thisList2 = list(("apple", "banana", "orange"))
+print(thisList2)
+print(thisList2[-1])
+print(thisList[0:2])
+
+if "apple" in thisList2: 
+    print("Yes, 'apple' is in the fruits list.")
+
+thisList2[1] = "blackcurrant"
+print(thisList2)
+
+thislist3 = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+thislist3[1:3] = ["blackcurrant", "watermelon"]
+print(thislist3)
+
+thisList2[1:2] = ["blackcurrant", "watermelon"]
+print(thisList2)
+
+thisList[1:3] = ["watermelon"]
+print(thisList)
+
+thisList = ["apple", "banana", "orange"]
+thisList.insert(2, "watermelon")
+print(thisList)
+
+thislist = ["apple", "banana", "cherry"]
+thislist.append("orange")
+print(thislist)
+
+tropical = ["mango", "pinapple", "papaya"]
+thislist.extend(tropical)
+print(thislist)
+
+thislist = ["apple", "banana", "cherry"]
+thistuple = ("kiwi", "orange")
+thislist.extend(thistuple)
+print(thislist)
+
+thislist = ["apple", "banana", "cherry"]
+thislist.remove("banana")
+print(thislist)
+thislist.pop(1)
+print(thislist)
+
+thislist = ["apple", "banana", "cherry"]
+del thislist[0]
+print(thislist)
+del thislist
+
+thislist = ["apple", "banana", "cherry"]
+thislist.clear()
+print(thislist)
