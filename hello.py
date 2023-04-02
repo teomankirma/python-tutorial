@@ -182,60 +182,76 @@
 
 # Lists
 
-thisList = ["apple", "banana", "orange"]
-print(thisList)
-print(len(thisList))
-print(type(thisList))
+# thisList = ["apple", "banana", "orange"]
+# print(thisList)
+# print(len(thisList))
+# print(type(thisList))
 
-thisList2 = list(("apple", "banana", "orange"))
-print(thisList2)
-print(thisList2[-1])
-print(thisList[0:2])
+# thisList2 = list(("apple", "banana", "orange"))
+# print(thisList2)
+# print(thisList2[-1])
+# print(thisList[0:2])
 
-if "apple" in thisList2: 
-    print("Yes, 'apple' is in the fruits list.")
+# if "apple" in thisList2: 
+#     print("Yes, 'apple' is in the fruits list.")
 
-thisList2[1] = "blackcurrant"
-print(thisList2)
+# thisList2[1] = "blackcurrant"
+# print(thisList2)
 
-thislist3 = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
-thislist3[1:3] = ["blackcurrant", "watermelon"]
-print(thislist3)
+# thislist3 = ["apple", "banana", "cherry", "orange", "kiwi", "mango"]
+# thislist3[1:3] = ["blackcurrant", "watermelon"]
+# print(thislist3)
 
-thisList2[1:2] = ["blackcurrant", "watermelon"]
-print(thisList2)
+# thisList2[1:2] = ["blackcurrant", "watermelon"]
+# print(thisList2)
 
-thisList[1:3] = ["watermelon"]
-print(thisList)
+# thisList[1:3] = ["watermelon"]
+# print(thisList)
 
-thisList = ["apple", "banana", "orange"]
-thisList.insert(2, "watermelon")
-print(thisList)
+# thisList = ["apple", "banana", "orange"]
+# thisList.insert(2, "watermelon")
+# print(thisList)
+
+# thislist = ["apple", "banana", "cherry"]
+# thislist.append("orange")
+# print(thislist)
+
+# tropical = ["mango", "pinapple", "papaya"]
+# thislist.extend(tropical)
+# print(thislist)
+
+# thislist = ["apple", "banana", "cherry"]
+# thistuple = ("kiwi", "orange")
+# thislist.extend(thistuple)
+# print(thislist)
+
+# thislist = ["apple", "banana", "cherry"]
+# thislist.remove("banana")
+# print(thislist)
+# thislist.pop(1)
+# print(thislist)
+
+# thislist = ["apple", "banana", "cherry"]
+# del thislist[0]
+# print(thislist)
+# del thislist
+
+# thislist = ["apple", "banana", "cherry"]
+# thislist.clear()
+# print(thislist)
+
+# Loop Lists
 
 thislist = ["apple", "banana", "cherry"]
-thislist.append("orange")
-print(thislist)
+for x in thislist:
+  print(x)
 
-tropical = ["mango", "pinapple", "papaya"]
-thislist.extend(tropical)
-print(thislist)
+for i in range(len(thislist)):
+  print(thislist[i])
 
-thislist = ["apple", "banana", "cherry"]
-thistuple = ("kiwi", "orange")
-thislist.extend(thistuple)
-print(thislist)
+i = 0
+while i < len(thislist):
+  print(thislist[i])
+  i = i + 1
 
-thislist = ["apple", "banana", "cherry"]
-thislist.remove("banana")
-print(thislist)
-thislist.pop(1)
-print(thislist)
-
-thislist = ["apple", "banana", "cherry"]
-del thislist[0]
-print(thislist)
-del thislist
-
-thislist = ["apple", "banana", "cherry"]
-thislist.clear()
-print(thislist)
+[print(x) for x in thislist]
