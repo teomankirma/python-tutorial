@@ -292,45 +292,88 @@
 
 # Tuples
 
-thistuple = ("apple", "banana", "cherry")
-print(thistuple)
-print(len(thistuple))
+# thistuple = ("apple", "banana", "cherry")
+# print(thistuple)
+# print(len(thistuple))
 
-thistuple = ("apple",)
-print(type(thistuple))
+# thistuple = ("apple",)
+# print(type(thistuple))
 
-#NOT a tuple
-thistuple = ("apple")
-print(type(thistuple))
+# #NOT a tuple
+# thistuple = ("apple")
+# print(type(thistuple))
 
-thistuple = tuple(("apple", "banana", "cherry")) # note the double round-brackets
-print(thistuple)
+# thistuple = tuple(("apple", "banana", "cherry")) # note the double round-brackets
+# print(thistuple)
 
-x = ("apple", "banana", "cherry")
-y = list(x)
-y[1] = "kiwi"
-x = tuple(y)
+# x = ("apple", "banana", "cherry")
+# y = list(x)
+# y[1] = "kiwi"
+# x = tuple(y)
+
+# print(x)
+
+# fruits = ("apple", "banana", "cherry")
+
+# (green, yellow, red) = fruits
+
+# print(green)
+# print(yellow)
+# print(red)
+
+# fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
+
+# (green, *tropic, red) = fruits
+
+# print(green)
+# print(tropic)
+# print(red)
+
+# tuple1 = ("a", "b" , "c")
+# tuple2 = (1, 2, 3)
+
+# tuple3 = tuple1 + tuple2
+# print(tuple3)
+
+# Sets
+
+thisset = {"apple", "banana", "cherry"}
+print(thisset)
+
+thisset = {"apple", "banana", "cherry", "apple"}
+print(thisset)
+
+thisset = set(("apple", "banana", "cherry")) # note the double round-brackets
+print(thisset)
+
+thisset.add("orange")
+print(thisset)
+
+tropical = {"pineapple", "mango", "papaya"}
+thisset.update(tropical)
+print(thisset)
+
+thisset.discard("banana")
+print(thisset)
+
+set1 = {"a", "b" , "c"}
+set2 = {1, 2, 3}
+
+set3 = set1.union(set2)
+print(set3)
+
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
+
+x.intersection_update(y)
 
 print(x)
 
-fruits = ("apple", "banana", "cherry")
+z = x.intersection(y)
+print(z)
 
-(green, yellow, red) = fruits
+x = {"apple", "banana", "cherry"}
+y = {"google", "microsoft", "apple"}
 
-print(green)
-print(yellow)
-print(red)
-
-fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
-
-(green, *tropic, red) = fruits
-
-print(green)
-print(tropic)
-print(red)
-
-tuple1 = ("a", "b" , "c")
-tuple2 = (1, 2, 3)
-
-tuple3 = tuple1 + tuple2
-print(tuple3)
+x.symmetric_difference_update(y)
+print(x)
