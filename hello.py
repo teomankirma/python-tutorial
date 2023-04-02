@@ -258,34 +258,79 @@
 
 # List Cont.
 
-fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+# fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
 
-newlist = [x for x in fruits if "a" in x]
+# newlist = [x for x in fruits if "a" in x]
 
-print(newlist)
+# print(newlist)
 
-newlist = ['hello' for x in fruits]
-print(newlist)
+# newlist = ['hello' for x in fruits]
+# print(newlist)
 
-thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
-thislist.sort()
-print(thislist)
+# thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+# thislist.sort()
+# print(thislist)
 
-thislist = [100, 50, 65, 82, 23]
-thislist.sort()
-print(thislist)
+# thislist = [100, 50, 65, 82, 23]
+# thislist.sort()
+# print(thislist)
 
-thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
-thislist.sort(reverse = True)
-print(thislist)
+# thislist = ["orange", "mango", "kiwi", "pineapple", "banana"]
+# thislist.sort(reverse = True)
+# print(thislist)
 
-def myfunc(n):
-  return abs(n - 50)
+# def myfunc(n):
+#   return abs(n - 50)
 
-thislist = [100, 50, 65, 82, 23]
-thislist.sort(key = myfunc)
-print(thislist)
+# thislist = [100, 50, 65, 82, 23]
+# thislist.sort(key = myfunc)
+# print(thislist)
 
-thislist = ["apple", "banana", "cherry"]
-mylist = thislist.copy()
-print(mylist)
+# thislist = ["apple", "banana", "cherry"]
+# mylist = thislist.copy()
+# print(mylist)
+
+# Tuples
+
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)
+print(len(thistuple))
+
+thistuple = ("apple",)
+print(type(thistuple))
+
+#NOT a tuple
+thistuple = ("apple")
+print(type(thistuple))
+
+thistuple = tuple(("apple", "banana", "cherry")) # note the double round-brackets
+print(thistuple)
+
+x = ("apple", "banana", "cherry")
+y = list(x)
+y[1] = "kiwi"
+x = tuple(y)
+
+print(x)
+
+fruits = ("apple", "banana", "cherry")
+
+(green, yellow, red) = fruits
+
+print(green)
+print(yellow)
+print(red)
+
+fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
+
+(green, *tropic, red) = fruits
+
+print(green)
+print(tropic)
+print(red)
+
+tuple1 = ("a", "b" , "c")
+tuple2 = (1, 2, 3)
+
+tuple3 = tuple1 + tuple2
+print(tuple3)
