@@ -507,11 +507,41 @@
 
 # Lambda
 
-x = lambda a : a + 10
-print(x(5))
+# x = lambda a : a + 10
+# print(x(5))
 
-x = lambda a, b : a * b
-print(x(5, 6))
+# x = lambda a, b : a * b
+# print(x(5, 6))
 
-x = lambda a, b, c : a + b + c
-print(x(5, 6, 2))
+# x = lambda a, b, c : a + b + c
+# print(x(5, 6, 2))
+
+# Classes
+
+class MyClass:
+  x = 5
+
+p1 = MyClass()
+print(p1.x)
+
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+p1 = Person("John", 36)
+
+print(p1.name)
+print(p1.age)
+
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  def __str__(self):
+    return f"{self.name}({self.age})"
+
+p1 = Person("John", 36)
+
+print(p1)
