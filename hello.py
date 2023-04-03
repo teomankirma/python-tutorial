@@ -518,30 +518,56 @@
 
 # Classes
 
-class MyClass:
-  x = 5
+# class MyClass:
+#   x = 5
 
-p1 = MyClass()
-print(p1.x)
+# p1 = MyClass()
+# print(p1.x)
+
+# class Person:
+#   def __init__(self, name, age):
+#     self.name = name
+#     self.age = age
+
+# p1 = Person("John", 36)
+
+# print(p1.name)
+# print(p1.age)
+
+# class Person:
+#   def __init__(self, name, age):
+#     self.name = name
+#     self.age = age
+
+#   def __str__(self):
+#     return f"{self.name}({self.age})"
+
+# p1 = Person("John", 36)
+
+# print(p1)
+
+# Inheritance
 
 class Person:
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
 
-p1 = Person("John", 36)
+  def printname(self):
+    print(self.firstname, self.lastname)
 
-print(p1.name)
-print(p1.age)
+#Use the Person class to create an object, and then execute the printname method:
 
-class Person:
-  def __init__(self, name, age):
-    self.name = name
-    self.age = age
+x = Person("John", "Doe")
+x.printname()
 
-  def __str__(self):
-    return f"{self.name}({self.age})"
+class Student(Person):
+  def __init__(self, fname, lname, year):
+    super().__init__(fname, lname)
+    self.graduationyear = year
 
-p1 = Person("John", 36)
+  def welcome(self):
+    print("Welcome", self.firstname, self.lastname, "to the class of", self.graduationyear)
 
-print(p1)
+x = Student("Mike", "Olsen", 2019)
+x.welcome()
