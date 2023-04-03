@@ -380,38 +380,72 @@
 
 # Dictionaries
 
-thisdict = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964,
-  "year": 2020
-}
-print(thisdict)
-print(thisdict["brand"])
+# thisdict = {
+#   "brand": "Ford",
+#   "model": "Mustang",
+#   "year": 1964,
+#   "year": 2020
+# }
+# print(thisdict)
+# print(thisdict["brand"])
 
-thisdict = dict(name = "John", age = 36, country = "Norway")
-print(thisdict)
-thisdict.update({"country": "turkiye"})
-thisdict.update({"color": "red"})
-print(thisdict)
+# thisdict = dict(name = "John", age = 36, country = "Norway")
+# print(thisdict)
+# thisdict.update({"country": "turkiye"})
+# thisdict.update({"color": "red"})
+# print(thisdict)
 
-child1 = {
-  "name" : "Emil",
-  "year" : 2004
-}
-child2 = {
-  "name" : "Tobias",
-  "year" : 2007
-}
-child3 = {
-  "name" : "Linus",
-  "year" : 2011
-}
+# child1 = {
+#   "name" : "Emil",
+#   "year" : 2004
+# }
+# child2 = {
+#   "name" : "Tobias",
+#   "year" : 2007
+# }
+# child3 = {
+#   "name" : "Linus",
+#   "year" : 2011
+# }
 
-myfamily = {
-  "child1" : child1,
-  "child2" : child2,
-  "child3" : child3
-}
+# myfamily = {
+#   "child1" : child1,
+#   "child2" : child2,
+#   "child3" : child3
+# }
 
-print(myfamily["child2"]["name"])
+# print(myfamily["child2"]["name"])
+
+# If...Else
+
+a = 200
+b = 33
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+else:
+  print("a is greater than b")
+
+a = 200
+b = 33
+c = 500
+if a > b and c > a:
+  print("Both conditions are True")
+
+a = 200
+b = 33
+c = 500
+if a > b or a > c:
+  print("At least one of the conditions is True")
+
+a = 33
+b = 200
+if not a > b:
+  print("a is NOT greater than b")
+
+a = 33
+b = 200
+
+if b > a:
+  pass
