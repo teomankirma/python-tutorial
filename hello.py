@@ -548,26 +548,51 @@
 
 # Inheritance
 
-class Person:
-  def __init__(self, fname, lname):
-    self.firstname = fname
-    self.lastname = lname
+# class Person:
+#   def __init__(self, fname, lname):
+#     self.firstname = fname
+#     self.lastname = lname
 
-  def printname(self):
-    print(self.firstname, self.lastname)
+#   def printname(self):
+#     print(self.firstname, self.lastname)
 
-#Use the Person class to create an object, and then execute the printname method:
+# #Use the Person class to create an object, and then execute the printname method:
 
-x = Person("John", "Doe")
-x.printname()
+# x = Person("John", "Doe")
+# x.printname()
 
-class Student(Person):
-  def __init__(self, fname, lname, year):
-    super().__init__(fname, lname)
-    self.graduationyear = year
+# class Student(Person):
+#   def __init__(self, fname, lname, year):
+#     super().__init__(fname, lname)
+#     self.graduationyear = year
 
-  def welcome(self):
-    print("Welcome", self.firstname, self.lastname, "to the class of", self.graduationyear)
+#   def welcome(self):
+#     print("Welcome", self.firstname, self.lastname, "to the class of", self.graduationyear)
 
-x = Student("Mike", "Olsen", 2019)
-x.welcome()
+# x = Student("Mike", "Olsen", 2019)
+# x.welcome()
+
+# Modules
+
+import mymodule
+
+mymodule.greeting("Jonathan")
+
+a = mymodule.person1["age"]
+print(a)
+
+import mymodule as mx
+
+a = mx.person1["age"]
+print(a)
+
+import platform
+
+x = platform.system()
+print(x)
+x = dir(platform)
+print(x)
+
+from mymodule import person1
+
+print (person1["age"])
